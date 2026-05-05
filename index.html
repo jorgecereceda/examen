@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
 </head>
 
 <body>
@@ -16,8 +17,8 @@
     <nav class="navbar">
         <p>logo</p>
         <ul class="navlink">
-            <li>enlace 1</li>
-            <li>enlace 2</li>
+            <li><a href="info.html" target="_blank">Info</a></li>
+            <li><a href="#form">Formulario</a></li>
         </ul>
     </nav>
 
@@ -60,8 +61,8 @@
     <p>Pronto tendremos a tu disposición un producto personalizado.</p>
 
     <!--formulario -->
-    <form>
-        <article class="cuadro">
+    <form id="form">
+        <article class="card2">
             <p>elige el tamaño</p>
             <input type="radio" id="pequeño" name="tamaño" value="pequeño">
             <label for="pequeño">pequeño</label><br>
@@ -72,7 +73,7 @@
         </article>
 
         <br>
-        <article class="cuadro">
+        <article class="card2">
             <p>elige tu color favorito
             <p>
             </p>
@@ -82,7 +83,7 @@
 
 
         <br>
-        <article class="cuadro">
+        <article class="card2">
             <p>escribe aqui tus sugerencias</p>
             <br>
             <textarea id="sugerencia" name="sugerencia" rows="4" cols="50">
@@ -91,7 +92,7 @@
         </article>
 
         <br>
-        <article class="cuadro">
+        <article class="card2">
 
             <input type="checkbox" id="enviar" name="aceptar" value="aceptado">
             <label for="enviar"> de acuerdo con nuestra politica de privacidad</label><br>
