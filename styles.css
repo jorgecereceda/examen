@@ -5,13 +5,13 @@
 /*fuentes*/
 h1 {
     font-family: 'Architects Daughter';
-    font-size: 32px;
+    font-size: 44px;
     color: rgb(17, 109, 78);
 }
 
 h2 {
     font-family: 'Josefin Sans';
-    font-size: 22px;
+    font-size: 32px;
     color: rgb(197, 109, 83);
 }
 
@@ -34,7 +34,6 @@ p {
     margin:0px;
 }
 
-/*enlaces*/
 .navlink {
     display: flex;
     flex-direction: row;
@@ -50,11 +49,19 @@ p {
       font-family: 'Montserrat';
 }
 
-/*logo*/
 .navbar p{
     margin:0px;
     font-family: 'Montserrat';
     font-size: 2rem;
+}
+
+/*footer*/
+.footer{
+    background-color: rgba(39, 25, 25, 0.63);
+    color: rgb(255, 255, 255);
+    display:flex;
+    justify-content: center;
+    padding: 20px;
 }
 
 
@@ -77,6 +84,9 @@ p {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
+.card h2 {
+    color: black;
+}
 .cardcontainer {
     display: flex;
     flex-wrap: wrap;
@@ -88,11 +98,35 @@ p {
 
 
 /*seccion formulario*/
+.formback{
+    background-color: rgb(190, 204, 204);
+    padding: 20px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin:auto;
+}
+
+.panel1{
+    background-color: antiquewhite;
+    padding: 20px;
+    width: 40%;
+}
+.panel2{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 40%;
+    border-radius: 10px;
+       box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
 .card2 {
     border-style: solid;
     border-width: 2px;
     padding: 20px;
-    width: 30%;
     margin: auto;
 
 }
@@ -125,4 +159,15 @@ p {
     .card {
         width: 90%;
     }
+ .form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+.panel1 {
+    width: 100%;
+}
+.panel2 {
+    width: 100%;
+}
 }
