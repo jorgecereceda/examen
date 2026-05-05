@@ -1,7 +1,7 @@
 # Nombre del Proyecto
 
 * Examen módulo de construcción de paginas web.
-* Creación de una página web con temática transformación digital
+* Creación de una página web con temática transformación digital.
 
 ## 🖥️ Cómo utilizarlo (Instalación)
 1.  **Clonar:** `git clone https://github.com/jorgecereceda/examen.git`
