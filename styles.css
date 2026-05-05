@@ -1,0 +1,68 @@
+
+/*fuentes*/
+h1{
+    font-family: 'Josefin Sans';font-size: 32px;
+    color: rgb(17, 109, 78);
+}
+h2 {
+    font-family: 'Josefin Sans';font-size: 22px;
+    color: rgb(197, 109, 83);
+}
+
+p {
+    font-family: 'Montserrat';font-size: 16px;
+}
+
+
+
+
+/* seccion informacion*/
+
+.informacion{
+    background-color: antiquewhite;
+    padding:20px;
+}
+.card{
+border-style: solid;
+border-width: 1px;
+border-color: antiquewhite;
+background-color: white;
+width: 30%;
+min-width: 400px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.cardcontainer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:auto;
+    gap:10px;
+}
+
+
+
+
+/*seccion formulario*/
+.cuadro {
+border-style: solid;
+border-width: 2px;
+width: 30%;
+margin: auto;
+
+}
+
+
+
+
+
+/* mediaqueries*/
+@media (max-width: 720px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .tarjeta{
+        width: 90%;
+    }
+}
