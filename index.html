@@ -13,45 +13,55 @@
 <body>
 
     <!--navbar -->
-    <nav>
-        <ul>
+    <nav class="navbar">
+        <p>logo</p>
+        <ul class="navlink">
             <li>enlace 1</li>
             <li>enlace 2</li>
         </ul>
     </nav>
 
-
-    <!--informacion del proyecto -->
-    <div class="informacion">
-    <h1>configura tu producto</h1>
-    <h2>bienvenido a nuestro sistema de optimizacion de productos</h2>
-    <p>elige tus opciones preferidas y nuestros algoritmos de inteligencia artifial crearan un producto para ti</p>
-    <p>tus sugerencias nos animan a mejorar</p>
-    
-    <div class="cardcontainer">
-    <div class="card">
-        <p>productos personalizados</p>
-    </div>
-
-    <div class="card">
-        <p>generado con IA</p>
-    </div>
-    <div class="card">
-        <p>nos importa tu feedback</p>
-    </div>
-    </div>
-
-    </div>
+    <img src="img/gestion.jpg" alt="Configura tu producto" width=100% height=auto>
 
 
+
+    <!--seccion informacion del proyecto -->
+
+    <!--texto informativo -->
+    <section class="informacion">
+        <h1>Configura tu producto</h1>
+        <h2>Bienvenido a nuestro sistema de optimización de productos.</h2>
+        <p>Elige tus opciones preferidas y nuestros algoritmos de inteligencia artifial crearan un producto
+            personalizado para ti.</p>
+        <p>Tus sugerencias nos animan a mejorar.</p>
+
+        <!--tarjetas -->
+        <section class="cardcontainer">
+            <article class="card">
+                <p>productos personalizados</p>
+            </article>
+
+            <article class="card">
+                <p>generado con IA</p>
+            </article>
+            <article class="card">
+                <p>nos importa tu feedback</p>
+            </article>
+        </section>
+
+    </section>
+
+
+
+    <!--seccion formulario -->
+    <!--texto informativo -->
+    <h2>Ayudanos a configuar tu producto.</h2>
+    <p>Rellena el siguiente formulario.</p>
+    <p>Pronto tendremos a tu disposición un producto personalizado.</p>
 
     <!--formulario -->
-    <h2>ayudanos a configuar tu producto </h2>
-    <p> rellena el siguiente formulario</p>
-    <p>pronto tendremos a disposicion tu producto personalizado</p>
-
     <form>
-        <div class="cuadro">
+        <article class="cuadro">
             <p>elige el tamaño</p>
             <input type="radio" id="pequeño" name="tamaño" value="pequeño">
             <label for="pequeño">pequeño</label><br>
@@ -59,35 +69,35 @@
             <label for="mediano">mediano</label><br>
             <input type="radio" id="grande" name="tamaño" value="grande">
             <label for="grande">grande</label>
-        </div>
+        </article>
 
         <br>
-        <div class="cuadro">
+        <article class="cuadro">
             <p>elige tu color favorito
             <p>
             </p>
             <label for="favcolor">color:</label>
             <input type="color" id="favcolor" name="favcolor">
-        </div>
+        </article>
 
 
         <br>
-        <div class="cuadro">
+        <article class="cuadro">
             <p>escribe aqui tus sugerencias</p>
             <br>
             <textarea id="sugerencia" name="sugerencia" rows="4" cols="50">
         sugerencias.
         </textarea>
-        </div>
+        </article>
 
         <br>
-        <div class="cuadro">
+        <article class="cuadro">
 
             <input type="checkbox" id="enviar" name="aceptar" value="aceptado">
             <label for="enviar"> de acuerdo con nuestra politica de privacidad</label><br>
 
             <input type="submit" value="¡Registrarme ahora!" disabled>
-        </div>
+        </article>
     </form>
 
 
