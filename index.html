@@ -26,14 +26,8 @@
     <img src="img/gestion.jpg" alt="Configura tu producto" width=100% height=auto>
     <p id="date">fecha</p>
     
-    <form action="/action_page.php">
-        <label for="username">Nombre</label>
-        <input type="text" id="username" name="username"><br><br>
-        <label for="pasword">Contraseña</label>
-        <input type="text" id="pasword" name="pasword"><br><br>
-        <input type="submit" value="Submit" id="login">
-    </form>
-    
+
+      
     <!--seccion informacion del proyecto -->
     
     <!--texto informativo -->
@@ -92,15 +86,14 @@
 
           <!--formulario 2-->
             <div class="panel2">
-
-                
+                                
                 <article class="card2">
                     <p>elige el tamaño</p>
-                    <input type="radio" id="pequeño" name="tamaño" value="pequeño">
+                    <input type="radio" id="pequeño" name="tamano" value="pequeño" checked>
                     <label for="pequeño">pequeño</label><br>
-                    <input type="radio" id="mediano" name="tamaño" value="mediano">
+                    <input type="radio" id="mediano" name="tamano" value="mediano">
                     <label for="mediano">mediano</label><br>
-                    <input type="radio" id="grande" name="tamaño" value="grande">
+                    <input type="radio" id="grande" name="tamano" value="grande">
                     <label for="grande">grande</label>
                 </article>
 
@@ -113,8 +106,8 @@
                     <input type="color" id="favcolor" name="favcolor">
                 </article>
                 <article class="card2">
-                    <label for="valoracion">Valoración (entre 1 and 5):</label>
-                    <input type="number" id="valoracion" name="valoracion" min="1" max="5">
+                    <label for="valoracion">Valoración (entre 1 y 5):</label>
+                    <input type="number" id="valoracion" name="valoracion" min="1" max="5" value="5">
                 </article>
                 <article class="card2">
                     <p>escribe aqui tus sugerencias</p>
@@ -129,10 +122,25 @@
 
                     <input type="submit" id="enviar" value="Enviar Formulario" disabled>
                 </article>
+
+                  <button type="button" id="loginbutton" class="button">login</button>
             </div>
         </form>
     </section>
 
+    <!--modal login-->
+     <div class="modal" id="modal">
+    <button type="button" id="closebutton" class="closebutton">X</button>
+    <form>
+        <label for="username">Nombre</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="pasword">Contraseña</label>
+        <input type="password" id="pasword" name="pasword"><br><br>
+        <input type="submit" value="login" id="login">
+    </form>
+    </div>
+
+    <!--footer-->
     <footer class="footer">
 
         <p>Jorge cereceda - 2026</p>

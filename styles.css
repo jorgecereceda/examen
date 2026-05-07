@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /*fuentes*/
@@ -31,7 +31,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin:0px;
+    margin: 0px;
 }
 
 .navlink {
@@ -43,23 +43,23 @@ p {
     list-style-type: none;
 }
 
-.navlink a{
-    color:aliceblue;
+.navlink a {
+    color: aliceblue;
     text-decoration: none;
-      font-family: 'Montserrat';
+    font-family: 'Montserrat';
 }
 
-.navbar p{
-    margin:0px;
+.navbar p {
+    margin: 0px;
     font-family: 'Montserrat';
     font-size: 2rem;
 }
 
 /*footer*/
-.footer{
+.footer {
     background-color: rgba(39, 25, 25, 0.63);
     color: rgb(255, 255, 255);
-    display:flex;
+    display: flex;
     justify-content: center;
     padding: 20px;
 }
@@ -87,6 +87,7 @@ p {
 .card h2 {
     color: black;
 }
+
 .cardcontainer {
     display: flex;
     flex-wrap: wrap;
@@ -98,7 +99,7 @@ p {
 
 
 /*seccion formulario*/
-.formback{
+.formback {
     background-color: rgb(190, 204, 204);
     padding: 20px;
 }
@@ -107,25 +108,26 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    margin:auto;
+    margin: auto;
 }
 
 .panel1 h2 {
-    color:black;
+    color: black;
 }
 
-.panel1{
+.panel1 {
     background-color: antiquewhite;
     padding: 20px;
 }
-.panel2{
+
+.panel2 {
     background-color: rgb(255, 255, 255);
     padding: 20px;
     width: 600px;
     border-radius: 10px;
-       box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 10px;
 }
@@ -141,27 +143,52 @@ p {
 
 /*pagina informacion*/
 /*adicional*/
-.adicional{
-background-color: antiquewhite;
+.adicional {
+    background-color: antiquewhite;
     padding: 20px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 /*boton*/
-.button{
-  background-color: rgba(39, 25, 25, 0.63);
+.button {
+    background-color: rgba(39, 25, 25, 0.63);
     color: aliceblue;
     border-radius: 10px;
-    padding:10px;
+    padding: 10px;
     text-decoration: none;
-     font-family: 'Montserrat';
+    font-family: 'Montserrat';
     font-size: 16px;
     margin: 30px;
     width: 200px;
 
 }
 
+
+/*cuadro modal*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+
+.closebutton {
+  color: #aaa;
+  position:absolute;
+  top:5px;
+  right: 5px;
+  font-size: 28px;
+  font-weight: bold;
+}
 
 /* mediaqueries*/
 @media (max-width: 720px) {
@@ -172,15 +199,17 @@ background-color: antiquewhite;
     .card {
         width: 90%;
     }
- .form {
+
+    .form {
         flex-direction: column;
         width: 100%;
     }
 
-.panel1 {
-    width: 100%;
-}
-.panel2 {
-    width: 100%;
-}
+    .panel1 {
+        width: 100%;
+    }
+
+    .panel2 {
+        width: 100%;
+    }
 }

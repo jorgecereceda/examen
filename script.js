@@ -19,14 +19,23 @@ salida.innerHTML=dias[weekday-1] + " " + day + " de " + meses[month];
 const aceptar = document.getElementById("aceptar");
 const enviar = document.getElementById("enviar");
 
+const favcolor=document.getElementById("favcolor");
+const valoracion=document.getElementById("valoracion");
+const sugerencia=document.getElementById("sugerencia");
+const radioseleccionado = document.querySelector('input[name="tamano"]:checked');
+
 aceptar.addEventListener("change", ()=>{
     enviar.disabled = !aceptar.checked;
 });
 
 enviar.addEventListener("click", function(event){
   event.preventDefault();
-  alert("mensaje enviado");
+  alert(`tamaño: ${radioseleccionado.value}
+color: ${favcolor.value}
+valoración: ${valoracion.value}
+sugerencias: ${sugerencia.value}`);
 });
+
 
 /*cambio imagen*/
 const imagen=document.getElementById("imagen");
@@ -51,6 +60,19 @@ imagen.addEventListener("click", ()=>{
 const validname="user1";
 const validpasword="123";
 
+const popup = document.getElementById("modal");
+const loginbutton = document.getElementById("loginbutton");
+const closebutton = document.getElementById("closebutton");
+
+loginbutton.addEventListener("click", ()=>{
+    modal.style.display = "block";
+
+});
+closebutton.addEventListener("click", ()=>{
+    modal.style.display = "none";
+
+});
+
 const username =document.getElementById("username");
 const password=document.getElementById("pasword");
 const login=document.getElementById("login");
@@ -59,6 +81,7 @@ login.addEventListener("click", function (event) {
       event.preventDefault();
     if (username.value==validname && password.value==validpasword){
         alert("usuario admitido");
+        localStorage.setItem('login', 'true');
     } else {
         alert ("usuario no admitido");
     }
