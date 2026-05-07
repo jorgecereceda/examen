@@ -22,7 +22,14 @@ const enviar = document.getElementById("enviar");
 const favcolor=document.getElementById("favcolor");
 const valoracion=document.getElementById("valoracion");
 const sugerencia=document.getElementById("sugerencia");
-const radioseleccionado = document.querySelector('input[name="tamano"]:checked');
+const radios = document.querySelectorAll('input[name="tamano"]');
+let radioseleccion="pequeño";
+
+radios.forEach(radio => {
+    radio.addEventListener('change', (e) => {
+      radioseleccion = e.target.value;
+    });
+  });
 
 aceptar.addEventListener("change", ()=>{
     enviar.disabled = !aceptar.checked;
@@ -30,7 +37,7 @@ aceptar.addEventListener("change", ()=>{
 
 enviar.addEventListener("click", function(event){
   event.preventDefault();
-  alert(`tamaño: ${radioseleccionado.value}
+  alert(`tamaño: ${radioseleccion}
 color: ${favcolor.value}
 valoración: ${valoracion.value}
 sugerencias: ${sugerencia.value}`);
