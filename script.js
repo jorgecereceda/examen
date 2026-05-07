@@ -45,3 +45,21 @@ imagen.addEventListener("click", ()=>{
 
                             }
 });
+
+
+/*login*/
+const validname="user1";
+const validpasword="123";
+
+const username =document.getElementById("username");
+const password=document.getElementById("pasword");
+const login=document.getElementById("login");
+
+login.addEventListener("click", function (event) {
+      event.preventDefault();
+    if (username.value==validname && password.value==validpasword){
+        alert("usuario admitido");
+    } else {
+        alert ("usuario no admitido");
+    }
+});

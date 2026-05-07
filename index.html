@@ -24,11 +24,18 @@
     </nav>
 
     <img src="img/gestion.jpg" alt="Configura tu producto" width=100% height=auto>
-        <p id="date">fecha</p>
-
-
+    <p id="date">fecha</p>
+    
+    <form action="/action_page.php">
+        <label for="username">Nombre</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="pasword">Contraseña</label>
+        <input type="text" id="pasword" name="pasword"><br><br>
+        <input type="submit" value="Submit" id="login">
+    </form>
+    
     <!--seccion informacion del proyecto -->
-
+    
     <!--texto informativo -->
     <section class="informacion">
         <h1>Configura tu producto</h1>
@@ -79,11 +86,14 @@
             <div class="panel1">
                 <h2>Estamos aquí para ayudarte</h2>
                 <p> rellena el formulario y contacta con nosotros. Pronto tendras tu producto personalizado</p>
+                <p>Haz click en la imagen</p>
                   <img src="img/Trabajando1.webp" id= "imagen" alt="haz click" width=200px height=200px>
             </div>
 
           <!--formulario 2-->
             <div class="panel2">
+
+                
                 <article class="card2">
                     <p>elige el tamaño</p>
                     <input type="radio" id="pequeño" name="tamaño" value="pequeño">
@@ -109,9 +119,7 @@
                 <article class="card2">
                     <p>escribe aqui tus sugerencias</p>
                     <br>
-                    <textarea id="sugerencia" name="sugerencia" rows="4" cols="50">
-        sugerencias.
-        </textarea>
+                    <textarea id="sugerencia" name="sugerencia" rows="4" cols="50" placeholder="Sugerencias"></textarea>
                 </article>
 
                 <article class="card2">

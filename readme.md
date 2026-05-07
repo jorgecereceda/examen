@@ -12,13 +12,13 @@
 * Utilizar colores, regas de background y fuentes.
 * Diseño responsive.
 * Formulario con variedad de datos de entrada y casilla de verificación.
-* uso de etiquetas h1, title y meta como estrategias SEO.
+* Uso de etiquetas h1, title y meta como estrategias SEO.
 
 
 ## 🛠️ Tecnologías
 * HTML5: Estructuración de una página web.
 * CSS3: Estilos de una página web.
-* javascript: trabajo con fecha y hora, habilitar boton,
+* javascript: trabajo con fecha y hora, habilitar boton, cambio de imagenes, login de acceso.
 
 ## 🎓 Autor
 *   **Jorge Cereceda  González** 
