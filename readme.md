@@ -8,8 +8,8 @@
 2.  **Ejecutar:** `ejecutar en servidor locar`
 
 ## ✨ Características
-* Layout con etiquetas semanticas, encabezados, hipervinculos internos y externos.
-* Utilizar colores, regas de background y fuentes.
+* Layout con etiquetas semánticas, encabezados, hipervinculos internos y externos.
+* Utilizar colores, reglas de background y fuentes.
 * Diseño responsive.
 * Formulario con variedad de datos de entrada y casilla de verificación.
 * Uso de etiquetas h1, title y meta como estrategias SEO.
@@ -18,7 +18,7 @@
 ## 🛠️ Tecnologías
 * HTML5: Estructuración de una página web.
 * CSS3: Estilos de una página web.
-* javascript: trabajo con fecha y hora, habilitar boton, cambio de imagenes, login de acceso.
+* javascript: trabajo con fecha y hora, habilitar botón, cambio de imágenes, login de acceso.
 
 ## 🎓 Autor
 *   **Jorge Cereceda  González** 

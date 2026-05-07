@@ -1,6 +1,6 @@
 /*fecha*/
 const meses=["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
-const dias = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"];
+const dias = ["domingo", "lunes", "martes", "miercoles", "jueves", "viernes", "sabado"];
 
 const salida = document.getElementById("date");
 
@@ -11,7 +11,7 @@ const month=date.getMonth();
 
 const fecha = document.getElementById(id="date");
 
-salida.innerHTML=dias[weekday-1] + " " + day + " de " + meses[month];
+salida.innerHTML=dias[weekday] + " " + day + " de " + meses[month];
 
 
 
