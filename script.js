@@ -27,3 +27,21 @@ enviar.addEventListener("click", function(event){
   event.preventDefault();
   alert("mensaje enviado");
 });
+
+/*cambio imagen*/
+const imagen=document.getElementById("imagen");
+
+let imagen1="img/Trabajando1.webp";
+let imagen2="img/Trabajando2.jpg";
+
+imagen.addEventListener("click", ()=>{
+    let imagenActual=imagen.getAttribute("src");
+     if(imagenActual==imagen1)  {
+
+                                imagen.setAttribute("src", imagen2);
+
+                            } else {  
+                                imagen.setAttribute("src", imagen1);
+
+                            }
+});

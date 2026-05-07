@@ -18,6 +18,7 @@
 ## 🛠️ Tecnologías
 * HTML5: Estructuración de una página web.
 * CSS3: Estilos de una página web.
+* javascript: trabajo con fecha y hora, habilitar boton,
 
 ## 🎓 Autor
 *   **Jorge Cereceda  González** 
