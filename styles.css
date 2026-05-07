@@ -142,6 +142,11 @@ p {
 
 }
 
+.textarea {
+    width: 100%;
+    resize: vertical;
+}
+
 /*pagina informacion*/
 /*adicional*/
 .adicional {
